@@ -1,8 +1,8 @@
-const {Sequelize} = require("sequelize");
-
-const database = require("../database/db");
+const { Sequelize } = require("sequelize");//importação do sequelize
+const database = require("../database/db");//importar a conexão com a model
 
 const Filme = database.sequelize.define(
+    //nome da tabela do postgres
     "filme",
     {
         id: {
@@ -24,12 +24,17 @@ const Filme = database.sequelize.define(
             allowNull: false,
         },
     },
-        {
-            freezeTableName: true,
-            timestamps:false,
-            createdAT: false,
-            updateAt: false,
-        }
+    {
+        freezeTableName: true, //o nome da tabela seja o mesmo que eu criei no banco
+        timestamps: false,//registrar a criação de tempo e data
+        createdAt: false,
+        updateAt: false,
+    }
 );
 
-module.exports = Filme;
+const initTable = async () => {
+    await Filme.sync();
+};
+initTable();
+
+module.exports = Filme;//exportar o Filme
