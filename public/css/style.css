@@ -17,12 +17,7 @@ body {
   min-height: 100vh;
   background-size: cover;
   overflow: auto;
-  background: rgb(63, 94, 251);
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 19%,
-    rgba(252, 70, 175, 0.8880706921944035) 100%
-  );
+  background: #7F0909;
   background-repeat: no-repeat;
 }
 h1 {
@@ -39,7 +34,6 @@ header {
 }
 nav {
   display: flex;
-  justify-content: center;
   gap: 30px;
 
   align-items: center;
@@ -56,7 +50,7 @@ nav a {
 }
 nav a:hover {
   color: rgb(0, 0, 0);
-  background-color: #fc46af;
+  background-color: #ffc500;
 }
 .container {
   display: flex;
@@ -89,10 +83,10 @@ nav a:hover {
   box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.7);
   text-align: center;
   box-shadow: inset 0px 1px 0px 0px #efdcfb;
-  background: linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
-  background-color: #dfbdfa;
+  background: linear-gradient(to bottom, #ffc500 5%, #ffc500 100%);
+  background-color: #ffc500;
   border-radius: 6px;
-  border: 1px solid #c584f3;
+  border: 1px solid #ffc500;
   /* display: inline-block; */
   cursor: pointer;
   color: #ffffff;
@@ -101,13 +95,13 @@ nav a:hover {
   font-weight: bold;
   /* padding: 6px 24px; */
   text-decoration: none;
-  text-shadow: 0px 1px 0px #d415ca;
+  text-shadow: 0px 1px 0px #ffc500;
 }
 
 .item a.cancelar:hover {
   cursor: pointer;
-  background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
-  background-color: #bc80ea;
+  background: linear-gradient(to bottom, #ffc500 5%, #ffc500 100%);
+  background-color: #ffc500;
 }
 .item a.cancelar:active {
   position: relative;
@@ -121,14 +115,14 @@ span.delecao {
 
 span.delecao:hover {
   cursor: pointer;
-  background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
-  background-color: #bc80ea;
+  background: linear-gradient(to bottom, #ffc500 5%, #ffc500 100%);
+  background-color: #ffc500;
 }
 
 .item h2 {
   font-size: 1.5em;
   text-decoration: underline;
-  color: #fc46af;
+  color: black;
   text-align: center;
 }
 .item p {
@@ -167,52 +161,35 @@ span.delecao:hover {
 /* apagar e editar */
 
 a.editar {
-  border: solid #2819cf;
+  border: solid black;
   padding: 1rem;
   margin: 1rem;
   text-align: center;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-color: #270acc;
+  background-color: #7F0909;
   border-radius: 1rem;
   font-size: 2rem;
   color: white;
 }
 
 a.apagar {
-  border: solid #bd0f75;
+  border: solid black;
   padding: 1rem;
   margin: 1rem;
   text-align: center;
   align-items: center;
-  /* justify-content: center; */
   text-decoration: none;
-  background-color: #bd0f75;
+  background-color: #ffc500;
   border-radius: 1rem;
   font-size: 2rem;
   color: white;
 }
 
-/* link que ainda não foi visitado */
-/* a:link{
-  color: rgb(235, 235, 242);
-} */
-
-/* link que foi visitado */
-/* a:visited {
-   color: green;
-} */
-
-/* mouse over */
 a:hover {
   color: #000000;
 }
-
-/* link selecionado */
-/* a:active .apagar{
-   color: red;
-} */
 
 footer {
   width: auto;
@@ -223,7 +200,6 @@ footer {
   font-size: 2rem;
 }
 
-/* estilização das caixas de mensagens alert */
 .message {
   position: absolute;
   top: 7rem;
@@ -313,7 +289,6 @@ footer {
   flex-wrap: wrap;
 }
 
-/* search */
 .search {
   padding-right: 2rem;
 }
